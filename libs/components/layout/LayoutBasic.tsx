@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Component } from "react";
 import Footer from "@/libs/Footer";
 import Top from "@/libs/Top";
+import React from "react";
 
 const withLayoutBasic = (Component: any) => {
   return (props: any) => {

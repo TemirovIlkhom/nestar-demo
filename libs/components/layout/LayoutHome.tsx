@@ -1,14 +1,17 @@
 import { Stack } from "@mui/material";
 import Head from "next/head";
-import { Component } from "react";
 import HeaderFilter from "../homepage/HeaderFilter";
 import Top from "@/libs/Top";
 import Footer from "@/libs/Footer";
+import React from "react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const withLayoutMain = (Component: any) => {
   return (props: any) => {
     return (
-      <>
+ <>
         <Head>
           <title>Nestar</title>
         </Head>

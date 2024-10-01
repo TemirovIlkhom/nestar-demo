@@ -1,6 +1,7 @@
 import { Logout } from "@mui/icons-material";
 import { Box, Menu, MenuItem, Stack } from "@mui/material";
 import Link from "next/link";
+import React from "react";
 
 const Top = () => {
   return (
@@ -13,6 +14,9 @@ const Top = () => {
             </Link>
           </Box>
           <Box component={"div"} className={"router-box"}>
+          <Link href={"/"}>
+              <div>Home</div>
+            </Link>
             <Link href={"/property"}>
               <div>Properties</div>
             </Link>
