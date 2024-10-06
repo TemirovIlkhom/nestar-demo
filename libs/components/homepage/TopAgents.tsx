@@ -6,7 +6,7 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import TopAgentsCard from "./TopAgentsCards";
 
 
-const TopAgents = ({ initialInput, ...props }: any) => {
+const TopAgents = ({ initialInput = [1, 2, 3, 4, 5, 6, 7], ...props }: any) => {
   const [topAgents, setTopAgents] = useState<number[]>(initialInput);
 
   return (
@@ -65,8 +65,5 @@ const TopAgents = ({ initialInput, ...props }: any) => {
   );
 };
 
-TopAgents.defaultProps = {
-  initialInput: [1, 2, 3, 4, 5, 6, 7],
-};
 
 export default TopAgents;

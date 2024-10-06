@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import TopPropertyCard from "./TopPropertyCard";
 
 
-const TopProperties = ({ initialInput, ...props }: any) => {
+const TopProperties = ({ initialInput = [1, 2, 3, 4, 5, 6, 7], ...props }: any) => {
   const [topProperties, setTopProperties] = useState<number[]>(initialInput);
 
   return (
@@ -51,10 +51,6 @@ const TopProperties = ({ initialInput, ...props }: any) => {
       </Stack>
     </Stack>
   );
-};
-
-TopProperties.defaultProps = {
-  initialInput: [1, 2, 3, 4, 5, 6, 7],
 };
 
 export default TopProperties;
